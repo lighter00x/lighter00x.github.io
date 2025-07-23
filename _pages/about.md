@@ -9,7 +9,6 @@ redirect_from:
 
 * Insitution  
 2024.9-now College of Information Science and Technology Jinan University  
-
 2020.9-2024.6 School of Mathematical Seiences Huaqiao University  
 
 * Research interests  
