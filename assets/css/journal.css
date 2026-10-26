@@ -33,7 +33,7 @@ body.journal-site { margin: 0; padding: 0; color: var(--ink); background: var(--
 .primary-link { display: inline-flex; align-items: center; gap: 25px; padding: 10px 19px; background: var(--accent); border: 1px solid var(--accent); border-radius: 5px; color: #fff !important; font-size: 12px; transition: background .18s; }
 .primary-link:hover { background: #185240; }
 .text-link { font-size: 12px; white-space: nowrap; }
-.profile-card { background: var(--card); border: 1px solid #e4e7df; border-radius: 12px; padding: 25px 27px; transform: rotate(1deg); }
+.profile-card { background: var(--card); border: 1px solid #e4e7df; border-radius: 12px; padding: 25px 27px; }
 .profile-topline { display: flex; justify-content: space-between; align-items: center; font-size: 9px; letter-spacing: 2px; color: var(--muted); }
 .profile-star { font-size: 28px; line-height: 1; color: var(--accent); }
 .profile-avatar { display: block; width: 86px; height: 86px; margin: 19px 0 16px; border-radius: 50%; object-fit: cover; border: 4px solid var(--paper); }
