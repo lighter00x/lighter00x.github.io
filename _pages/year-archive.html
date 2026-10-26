@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: journal
 permalink: /year-archive/
 title: "博客"
 author_profile: true
@@ -7,13 +7,7 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<section class="archive-section">
+  <div class="section-heading"><div><div class="eyebrow">THE LEARNING LOG</div><h1><span data-lang="zh">文章与实践<span class="name-period">.</span></span><span data-lang="en" hidden>Writing & experiments<span class="name-period">.</span></span></h1><p data-lang="zh">关于大模型、强化学习，以及把训练真正跑起来的过程。</p><p data-lang="en" hidden>Notes on language models, reinforcement learning, and making training work. Written in Chinese.</p></div><span class="article-count">{{ site.posts | size }} <span data-lang="zh">篇记录</span><span data-lang="en" hidden>ARTICLES</span></span></div>
+  {% include journal-post-list.html %}
+</section>

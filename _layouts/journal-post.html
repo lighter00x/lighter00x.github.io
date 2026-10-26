@@ -1,0 +1,13 @@
+---
+layout: journal
+---
+<article class="journal-article" lang="zh-CN">
+  <header class="article-header">
+    <a class="back-link" href="{{ '/year-archive/' | relative_url }}"><span data-lang="zh">← 所有文章</span><span data-lang="en" hidden>← All writing</span></a>
+    <div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% if page.tags.first %}<span class="meta-dot">/</span><span>{{ page.tags.first | escape }}</span>{% endif %}<span data-lang="en" hidden>Written in Chinese</span></div>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="article-deck">{{ page.excerpt | strip_html }}</p>
+  </header>
+  <div class="article-body">{{ content }}</div>
+  <div class="article-end"><span>✳</span><p data-lang="zh">感谢阅读，欢迎交流。</p><p data-lang="en" hidden>Thanks for reading. Let's exchange ideas.</p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
+</article>

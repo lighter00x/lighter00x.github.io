@@ -10,6 +10,15 @@
 - 配图：`images/verl/`
 - 博客入口：`/year-archive/`
 
+## 自定义外观与双语主页
+
+- `_pages/about.html`：首页个人介绍、教育经历、系列入口；中英文分别写在 `data-lang="zh"` 和 `data-lang="en"` 元素中。
+- `_layouts/journal.html`：导航、语言切换和页脚。
+- `_includes/journal-post-list.html`：自动读取文章的列表，不用手工添加新文章链接。
+- `_layouts/journal-post.html`：文章阅读页。
+- `assets/css/journal.css`：配色、字体、桌面和手机布局。
+- `assets/js/journal.js`：语言切换，默认中文，在浏览器中记住选择；正文保持原语言。
+
 ## 换设备继续写作
 
 安装 Git，配置自己的 GitHub 登录凭据后：
