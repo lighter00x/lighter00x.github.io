@@ -1,4 +1,7 @@
 # Academic Pages
+
+本站的文章发布、换设备继续写作和本地预览方法见 [博客维护说明](BLOGGING.md)。
+
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
