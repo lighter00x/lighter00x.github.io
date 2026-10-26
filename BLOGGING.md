@@ -35,10 +35,9 @@ permalink: /posts/english-slug/
 excerpt: '一两句话介绍这篇文章。'
 tags:
   - 学习笔记
-toc: true
-toc_label: '文章目录'
-toc_sticky: true
 ---
+
+{% include toc title="文章目录" %}
 
 正文从这里开始。
 
