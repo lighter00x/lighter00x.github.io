@@ -1,0 +1,12 @@
+---
+layout: journal
+title: "verl 框架使用"
+permalink: /topics/verl-framework/
+description: "从上层设计到分布式执行，结合固定源码快照学习 verl 框架。"
+---
+{% assign topic_posts = site.posts | where: 'topic', 'verl-framework' %}
+<section class="archive-section">
+  <a class="back-link" href="{{ '/year-archive/' | relative_url }}"><span data-lang="zh">← 所有文章</span><span data-lang="en" hidden>← All writing</span></a>
+  <div class="section-heading"><div><div class="eyebrow">FRAMEWORK NOTES / VERL</div><h1><span data-lang="zh">verl 框架使用<span class="name-period">.</span></span><span data-lang="en" hidden>Using the verl framework<span class="name-period">.</span></span></h1><p data-lang="zh">结合固定源码快照，从算法职责到分布式执行，逐层理解框架设计与调用关系。</p><p data-lang="en" hidden>A source-based guide to algorithm roles, distributed execution, and how the framework fits together. Written in Chinese.</p></div><span class="article-count">{{ topic_posts | size }} <span data-lang="zh">篇文章</span><span data-lang="en" hidden>ARTICLE(S)</span></span></div>
+  {% include journal-post-list.html topic='verl-framework' %}
+</section>

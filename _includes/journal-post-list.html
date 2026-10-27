@@ -1,9 +1,11 @@
 <div class="writing-list">
-  {% for post in site.posts %}
+  {% assign listed_posts = site.posts %}
+  {% if include.topic %}{% assign listed_posts = site.posts | where: 'topic', include.topic %}{% endif %}
+  {% for post in listed_posts %}
   <article class="writing-row">
     <div class="writing-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%m.%d' }}</time><span>{{ post.date | date: '%Y' }}</span></div>
     <div class="writing-content">
-      <div class="writing-label"><span class="topic-dot"></span><span data-lang="zh">实践笔记</span><span data-lang="en" hidden>FIELD NOTES · ZH</span></div>
+      <div class="writing-label"><span class="topic-dot"></span>{% if post.topic %}<a href="{{ '/topics/' | append: post.topic | append: '/' | relative_url }}"><span data-lang="zh">{{ post.topic_title | escape }}</span><span data-lang="en" hidden>{{ post.topic_title_en | default: post.topic_title | escape }}</span></a>{% else %}<span data-lang="zh">实践笔记</span><span data-lang="en" hidden>FIELD NOTES · ZH</span>{% endif %}</div>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
       <p>{{ post.excerpt | strip_html | truncate: 105 }}</p>
       <div class="writing-tags">{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}</div>

@@ -34,6 +34,21 @@ cd lighter00x.github.io
 
 ## 新增文章
 
+### verl 框架使用专题
+
+专题地址：`/topics/verl-framework/`。首篇文章发布于 2026-10-27，来自 `verl学习文档/01_verl上层设计_从算法到执行.md`，原文未修改；配图在 `images/verl-framework/`。
+
+后续文章添加以下 front matter，就会自动出现在专题列表与全部文章中：
+
+```yaml
+topic: verl-framework
+topic_title: verl 框架使用
+topic_title_en: Using the verl framework
+math: true
+```
+
+`math: true` 会加载公式渲染组件。引用尚未发布的本地文档时，先标为待发布；发布后再替换为文章网址。
+
 在 `_posts/` 新建 `YYYY-MM-DD-english-slug.md`，填写真实发布日期、唯一链接和标题：
 
 ```markdown
