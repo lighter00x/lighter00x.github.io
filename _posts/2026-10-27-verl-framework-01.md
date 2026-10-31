@@ -15,7 +15,7 @@ tags:
 
 {% include toc title="文章目录" %}
 
-> 阅读定位：先理解 verl 为什么拆成这些组件，以及它们如何共同完成一轮训练。Ray 的使用细节见[第二篇：Ray 实际使用](/posts/verl-framework-02/)，两层如何接起来见第三篇（verl 调用 Ray，待发布）。
+> 阅读定位：先理解 verl 为什么拆成这些组件，以及它们如何共同完成一轮训练。Ray 的使用细节见[第二篇：Ray 实际使用](/posts/verl-framework-02/)，两层如何接起来见[第三篇：verl 如何调用 Ray](/posts/verl-framework-03/)。
 >
 > 本文围绕组件职责、训练闭环和分布式执行展开，依据固定源码快照整理。原稿源码核对日期：2026-10-07；verl 快照：`8718ca30a3f002f93b7c4fd99b9b2506718681bc`。主线为 V1 sync、CUDA、统一 Engine 路径；V0、异步、LoRA 和独立 rollout 在相应位置单独说明。示例中的数字是教学设定。
 

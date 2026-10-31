@@ -16,7 +16,7 @@ tags:
 
 {% include toc title="文章目录" %}
 
-> 阅读定位：从能运行的小程序出发，理解 Ray 如何创建进程、保存状态、传递数据、分配 GPU，并与 PyTorch 通信配合。本文不依赖 verl；与 verl 的对应关系见第三篇（verl 调用 Ray，待发布）。
+> 阅读定位：从能运行的小程序出发，理解 Ray 如何创建进程、保存状态、传递数据、分配 GPU，并与 PyTorch 通信配合。本文不依赖 verl；与 verl 的对应关系见[第三篇：verl 如何调用 Ray](/posts/verl-framework-03/)。
 >
 > 依据原目录资料及本地 Ray 快照 `f54b8b3ea54ba3515f6e8be40258c83b4e00d099`，整理于 2026-10-07。Python API 需与实际安装版本核对；CPU 示例不要求 GPU，NCCL 示例面向 Linux CUDA 环境。本次做静态核对与语法验证，未在 Ray/GPU 集群执行。
 
@@ -543,4 +543,4 @@ Actor 地址已知后的稳定方法调用不需要每次重新申请 GPU或创�
 
 Ray Actor 重启不会自动恢复模型训练状态。任务超时也不自动等于取消远端执行；有副作用的训练方法不能盲目重试。
 
-完成 CPU 示例后，你应能解释引用依赖；完成 PG 探针后，应能区分可见设备与 rank；读完 DDP 示例，应能区分 Ray 的方法调用与 NCCL 的梯度通信。接下来读第三篇（verl 调用 Ray，待发布），看 verl 将这些操作封装到了哪里。
+完成 CPU 示例后，你应能解释引用依赖；完成 PG 探针后，应能区分可见设备与 rank；读完 DDP 示例，应能区分 Ray 的方法调用与 NCCL 的梯度通信。接下来读[第三篇：verl 如何调用 Ray](/posts/verl-framework-03/)，看 verl 将这些操作封装到了哪里。
